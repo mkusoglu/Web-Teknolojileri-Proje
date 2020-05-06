@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<title>PROJE</title>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="css/stillerim.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary ">
+  <a class="navbar-brand" href="#">PROJE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link" href="index.html">Anasayfa</a><span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="cv.html">CV</a>
+      <a class="nav-item nav-link" href="sehrim.html">Şehrim</a>
+      <a class="nav-item nav-link" href="miras.html">Takımımız</a>
+	  <a class="nav-item nav-link" href="iletisim.html">İletişim Sayfası</a>
+
+    </div>
+  </div>
+</nav>
+	</header>
+	
+	<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <a href="https://www.transfermarkt.com.tr/gebzespor/jugendarbeit/verein/13648"><img src="img/4.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <a href="https://www.kocaeli.bel.tr/"><img src="img/5.jpg" style="width:100%">
+   
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <a href="https://gezimanya.com/turkiye/kocaelide-gezilecek-yerler-0"><img src="img/6.jpg" style="width:100%">
+ 
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <a href="http://www.gebze.bel.tr/tr/Default.aspx"><img src="img/7.jpg" style="width:100%">
+ 
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+
+</div>
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+		
+		
+		
+		<h2>KOCAELİ</h2>
+		<p>Kocaeli, Türkiye'nin bir ilidir. Türkiye'nin en kalabalık onuncu ilidir Türkiye'nin en büyük sanayi ve ticaret şehirlerinden biridir. İstanbul ve Bursa ilinden sonra Marmara Bölgesi'nin üçüncü en büyük ilidir. 2019 itibarıyla 1.906.391 kişilik nüfusa sahiptir. Adını 1320 yılında İzmit yöresini fetheden Akça Koca'dan almaktadır. İstanbul, Sakarya, Bilecik, Bursa ve Yalova illeriyle komşudur.</p>
+	
+		<h2>GEBZE</h2>
+		<p>Gebze Marmara Bölgesinde Kocaeli'ne bağlı, İzmit Körfezi'nin kuzey batısında yer alan zengin bir tarihi geçmişe sahip, ekonomisi büyük oranda sanayiye dayalı, Türkiye'nin hızla gelişen ve büyüyen bir ilçesidir. Doğusunda Dilovası İlçesi, Batısında Darıca, Çayırova ve Tuzla İlçeleri, güneyinde İzmit Körfezi, kuzeyinde ise Şile İlçesi yer almaktadır.    </p>
+		
+		<h2>Gezilecek Yerler</h2>
+		
+		<img src="img/10.png" style="width:100%"/>
+		
+		<h1>Osman Hamdi Bey Müzesi</h1>
+		<p>Büyük, Türk Müzecisi ve ressamı Osman Hamdi Bey (1842-1910) tarafından Gebze-Eskihisar Köyü'nde, 1884 yılında yapılan köşk, resimhane, kayıkhane ve müştemilat olarak yaptırılmıştır.
+
+Planları Osman Hamdi Bey tarafından çizilen ve Fransız mimarisi özellikleri taşıyan köşkün yapı malzemelerinin birçoğu yurtdışından getirilmiştir. Osman Hamdi Bey’in giriş katında bulunan ahşap kapıların tablalarına yaptığı her bir çiçek resminin tabloları değerinde olduğu düşünülmektedir. Osman Hamdi Bey 26 yıl boyunca yaz aylarını geçirdiği bu köşkte en ünlü tablolarını çizmiştir.
+
+Osman Hamdi Bey evi ve müzesi ziyaret saatleri: Hafta içi 09.00 ile 17.30 saatleri arasında ücretsiz olarak ziyaret edebilirsiniz. Müze hafta sonları kapalıdır. Müze şu an tadilat nedeniyle kapalıdır.</p>
+		
+		<img src="img/8.jpg" style="width:100%"/>
+		<h1>İzmit Saat Kulesi</h1>
+		<p>1900-1901 yıllarında İzmit Mutasarrıfı Musa Kazım Bey denetiminde İzmit Belediyesi tarafından yaptırılan İzmit Saat Kulesi, Mimar Vedat Tek’in eseridir. Kimi kaynaklar kulenin yapımını Bahçecik-İzmitli bir Osmanlı Ermenisi olan Mihran Azaryan olarak da vermektedir.
+Saat kulelerinin esas işlevi halka zamanı göstermektir. Marangozluğu yanında saatlere olan merakı ile de tanınan Sultan II. Abdülhamit, Osmanlı tahtına çıkışının 25. yıldönümünde saat kulelerinin yaygınlaşması konusunda bir çalışma başlatmış ve Mutasarrıflara (Valilere) gönderdiği bir fermanla Anadolu kentlerinde saat kuleleri yapımını teşvik etmiştir. Bu tarihe kadar Osmanlı’da lüks bir eşya olarak algılanan saat halka ulaşmıştır. 
+Neoklasik üslupta Hereke ve Tavşancıldan getirilen traverten taşlardan yaptırılan saat kulesi 3,65x3,65 metre ölçülerinde kare planlı olup 4 bölümden oluşmaktadır. Kulenin üç yüzü, mermer motifli çeşmelerle süslenmiştir. Zemin katı oluşturan 1.bölüm diğer üç kattan daha geniş bir şekilde yapılmıştır. Saat kulesi 16.40 m yüksekliğindedir.</p>
+		
+		<img src="img/9.jpg" style="width:100%"/>
+		<h1>Ballıkayalar</h1>
+		<p>Ballıkayalar Tabiat Parkı Kocaeli İli, Gebze İlçesiiçersinde Tavşanlı köyü yakınlarında yer almakta olup 21.07.1995 tarihliBakanlar Kurulu Kararı ile tescil edilmiştir. Gebze’ye 8 km, İzmit’e 39 kmmesafededir.</p>
+		<p>Kuzeyden güneye, Gürgenden adı verilen ve vadi içerisinde"Ballıkaya Dere" adını alan bir akarsu tarafından,yakın jeolojikgeçmişte kireçtaşları içerisinde gömülerek açılmıştır. Aynı dere, vadiçıkışından sonra ufak bir göl oluşturup, göl çıkışını takiben Tavşanlıdereadını alarak güneyde Marmara Denizine kavuşur.</p>
+		
+	
+	<footer id="main-footer" class="py-2">
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="col-md-6 mx-auto">
+						<p class="lead">Mustafa Kuşoğlu'na Aittir.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+</body>
+
+
+
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<title>Mesaj</title>	
+<script type="text/javascript">
+function parseURLParams(url) {
+    var queryStart = url.indexOf("?") + 1,
+        queryEnd   = url.indexOf("#") + 1 || url.length + 1,
+        query = url.slice(queryStart, queryEnd - 1),
+        pairs = query.replace(/\+/g, " ").split("&"),
+        parms = {}, i, n, v, nv;
+
+    if (query === url || query === "") return;
+
+    for (i = 0; i < pairs.length; i++) {
+        nv = pairs[i].split("=", 2);
+        n = decodeURIComponent(nv[0]);
+        v = decodeURIComponent(nv[1]);
+
+        if (!parms.hasOwnProperty(n)) parms[n] = [];
+        parms[n].push(nv.length === 2 ? v : null);
+    }
+    return parms;
+}
+$("document").ready(function(){
+      var pathname = window.location.href
+   var veriler = parseURLParams(pathname)
+   console.log(veriler)
+
+  document.getElementById("ad").innerHTML=veriler.adi ;
+  document.getElementById("soyad").innerHTML=veriler.soyad ;
+  document.getElementById("email").innerHTML=veriler.email ;
+  document.getElementById("cinsiyet").innerHTML=veriler.cinsiyet ;
+    document.getElementById("mesaj").innerHTML=veriler.mesaj ;
+	    document.getElementById("sehir").innerHTML=veriler.sehir ;
+});
+</script>
+	
+</head>
+	<body onLoad="KodUret()">
+	<body>
+	<div class="form1">
+     
+	<table width="622">
+		 <tr>
+		 <th>ADINIZ</th>
+		 <td>
+		 <p id="ad"></p></td>
+		 </tr>
+		 <tr>
+		 <th>SOYADINIZ</th>
+		 <td><p id="soyad"></p></td>
+		 </tr>
+		 
+		 ,<tr>
+		 <th>Email</th>
+		 <td><p id="email"></p></td>
+		 </tr>
+		  <tr>
+		 <th>Cinsiyet</th>
+		 <td><p id="cinsiyet"></p></td>
+		 </tr>
+		    <tr>
+		 <th>sehir</th>
+		 <td><p id="sehir"></p></td>
+		 </tr>
+		   <tr>
+		 <th>Mesaj</th>
+		 <td><p id="mesaj"></p></td>
+		 </tr>
+	</table>	
+
+	</div>
+	</body>
+</html>
