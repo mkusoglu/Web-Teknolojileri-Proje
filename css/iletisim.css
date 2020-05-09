@@ -61,3 +61,25 @@ input[type=email], select, textarea {
     margin-top: 0;
   }
 }
+p {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.containero {
+  border-radius: 5px;
+  background-color: #E2DDD9;
+  padding: 20px;
+}
